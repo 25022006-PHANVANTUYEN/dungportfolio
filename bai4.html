@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4: Công cụ hợp tác trực tuyến - Phan Văn Tuyến</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="summary.html" class="nav-link">Summary</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-detail-header">
+                <a href="projects.html" class="back-link">← Quay lại</a>
+                <h1>Bài 4: Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="project-detail-content">
+                <!-- Project Overview -->
+                <div class="detail-section">
+                    <h2>📌 Tổng quan</h2>
+                    <p>
+                        Bài tập này tập trung vào việc sử dụng các công cụ hợp tác trực tuyến hiện đại để làm việc 
+                        nhóm hiệu quả. Trong bối cảnh làm việc từ xa ngày càng phổ biến, kỹ năng sử dụng các công cụ 
+                        hợp tác là không thể thiếu cho sinh viên và nhà làm việc chuyên nghiệp.
+                    </p>
+                </div>
+
+                <!-- Learning Objectives -->
+                <div class="detail-section">
+                    <h2>🎯 Mục tiêu học tập</h2>
+                    <div class="objectives-list">
+                        <div class="objective-item">
+                            <h4>Sử dụng Git và GitHub</h4>
+                            <p>Nắm vững các lệnh cơ bản của Git, biết cách sử dụng GitHub để quản lý code</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Quản lý dự án trực tuyến</h4>
+                            <p>Làm quen với các công cụ quản lý dự án như Trello, Asana, Monday.com</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Giao tiếp nhóm hiệu quả</h4>
+                            <p>Sử dụng các nền tảng giao tiếp như Slack, Microsoft Teams, Discord</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Quản lý phiên bản (Version Control)</h4>
+                            <p>Hiểu về branch, merge, conflict resolution, pull request</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Concepts -->
+                <div class="detail-section">
+                    <h2>💡 Các khái niệm chính</h2>
+                    <div class="concepts-grid">
+                        <div class="concept-card">
+                            <h4>Repository</h4>
+                            <p>Kho lưu trữ dự án, chứa tất cả các file và lịch sử thay đổi</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Branch (Nhánh)</h4>
+                            <p>Một bản sao của mã nguồn để phát triển tính năng riêng biệt</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Commit</h4>
+                            <p>Lưu các thay đổi của bạn vào kho lưu trữ với thông điệp mô tả</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Pull Request</h4>
+                            <p>Yêu cầu để gộp (merge) các thay đổi từ một branch sang branch khác</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git Commands -->
+                <div class="detail-section">
+                    <h2>📋 Các lệnh Git cơ bản</h2>
+                    <div class="commands-table">
+                        <div class="command-row">
+                            <code>git clone</code>
+                            <p>Sao chép repository từ GitHub về máy tính</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git add</code>
+                            <p>Thêm các file đã thay đổi vào staging area</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git commit -m "message"</code>
+                            <p>Lưu các thay đổi vào repository</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git push</code>
+                            <p>Đưa các thay đổi từ máy tính lên GitHub</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git pull</code>
+                            <p>Lấy các thay đổi mới nhất từ GitHub về máy tính</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git branch</code>
+                            <p>Tạo hoặc chuyển đổi branch</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git merge</code>
+                            <p>Gộp các thay đổi từ một branch sang branch khác</p>
+                        </div>
+                        <div class="command-row">
+                            <code>git log</code>
+                            <p>Xem lịch sử các commit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collaboration Tools -->
+                <div class="detail-section">
+                    <h2>🛠️ Các công cụ hợp tác</h2>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <span class="tool-icon">💻</span>
+                            <h4>GitHub</h4>
+                            <p>Quản lý mã nguồn, version control, Pull Request</p>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">📋</span>
+                            <h4>Trello / Asana</h4>
+                            <p>Quản lý dự án, theo dõi công việc</p>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">💬</span>
+                            <h4>Slack / Discord</h4>
+                            <p>Giao tiếp nhóm, thảo luận</p>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-icon">📹</span>
+                            <h4>Zoom / Google Meet</h4>
+                            <p>Họp trực tuyến, cuộc gọi video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Practices -->
+                <div class="detail-section">
+                    <h2>⭐ Các thực hành tốt nhất cho làm việc nhóm</h2>
+                    <div class="practices-grid">
+                        <div class="practice-item">
+                            <h4>Commit thường xuyên</h4>
+                            <p>Commit code thường xuyên với các thông điệp rõ ràng mô tả thay đổi</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Sử dụng branch riêng</h4>
+                            <p>Mỗi người làm việc trên branch riêng của họ để tránh xung đột</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Code review</h4>
+                            <p>Kiểm tra code của nhau thông qua Pull Request trước khi merge</p>
+                        </div>
+                        <div class="practice-item">
+                            <h4>Giao tiếp rõ ràng</h4>
+                            <p>Duy trì giao tiếp tốt với nhóm thông qua các công cụ hợp tác</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workflow Example -->
+                <div class="detail-section">
+                    <h2>📊 Quy trình làm việc nhóm tiêu biểu</h2>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Clone Repository</h4>
+                            <p>Mỗi thành viên clone repository về máy tính</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Tạo Branch</h4>
+                            <p>Tạo một branch mới cho tính năng hoặc task mình làm</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Phát triển</h4>
+                            <p>Viết code, test, commit thường xuyên</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Push to GitHub</h4>
+                            <p>Đưa các thay đổi lên GitHub</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h4>Pull Request</h4>
+                            <p>Tạo Pull Request để yêu cầu merge code</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <h4>Code Review</h4>
+                            <p>Các thành viên khác review code và approve</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <h4>Merge & Pull</h4>
+                            <p>Merge code vào main branch, pull code mới về máy tính</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Outcomes -->
+                <div class="detail-section">
+                    <h2>✅ Kết quả sau hoàn thành</h2>
+                    <ul class="outcomes-list">
+                        <li>Thành thạo sử dụng Git và GitHub</li>
+                        <li>Biết cách quản lý dự án bằng các công cụ trực tuyến</li>
+                        <li>Có khả năng giao tiếp và hợp tác hiệu quả với nhóm</li>
+                        <li>Hiểu về version control và cách giải quyết xung đột code</li>
+                        <li>Sẵn sàng cho việc làm việc chuyên nghiệp trong môi trường nhóm</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Back to Projects -->
+            <div class="back-button">
+                <a href="projects.html" class="btn btn-primary">← Quay lại danh sách dự án</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Phan Văn Tuyến. Sinh viên UET-K70.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="mailto:25022006@vnu.edu.vn">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

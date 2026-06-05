@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5: AI sinh nội dung - Phan Văn Tuyến</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <a href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="summary.html" class="nav-link">Summary</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-detail-header">
+                <a href="projects.html" class="back-link">← Quay lại</a>
+                <h1>Bài 5: Sử dụng AI tạo sinh đề hỗ trợ sáng tạo nội dung</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="project-detail-content">
+                <!-- Project Overview -->
+                <div class="detail-section">
+                    <h2>📌 Tổng quan</h2>
+                    <p>
+                        Bài tập này giới thiệu về việc sử dụng các công cụ AI tạo sinh như DALL-E, Midjourney, Stable Diffusion 
+                        để tạo nội dung hình ảnh, video, âm thanh. Các công cụ này mở ra những khả năng mới trong sáng tạo 
+                        và phát triển nội dung cho các dự án học tập và chuyên nghiệp.
+                    </p>
+                </div>
+
+                <!-- Learning Objectives -->
+                <div class="detail-section">
+                    <h2>🎯 Mục tiêu học tập</h2>
+                    <div class="objectives-list">
+                        <div class="objective-item">
+                            <h4>Sử dụng công cụ AI tạo sinh ảnh</h4>
+                            <p>Làm quen với các công cụ DALL-E, Midjourney, Stable Diffusion để tạo ảnh</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Thiết kế Prompt cho tạo sinh ảnh</h4>
+                            <p>Biết cách viết các mô tả chi tiết để tạo ảnh theo ý muốn</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Tạo sinh video và âm thanh</h4>
+                            <p>Sử dụng AI để tạo video, nhạc nền, voice-over</p>
+                        </div>
+                        <div class="objective-item">
+                            <h4>Chỉnh sửa và tối ưu hóa nội dung</h4>
+                            <p>Chỉnh sửa, cải tiến nội dung được tạo bởi AI để phù hợp với nhu cầu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Concepts -->
+                <div class="detail-section">
+                    <h2>💡 Các khái niệm chính</h2>
+                    <div class="concepts-grid">
+                        <div class="concept-card">
+                            <h4>Generative AI</h4>
+                            <p>AI có khả năng tạo sinh nội dung mới, không chỉ phân loại hoặc dự đoán</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Diffusion Model</h4>
+                            <p>Mô hình AI sử dụng quá trình khuếch tán để tạo ảnh từ nhiễu</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Text-to-Image</h4>
+                            <p>Công nghệ tạo ảnh từ mô tả văn bản</p>
+                        </div>
+                        <div class="concept-card">
+                            <h4>Upscaling</h4>
+                            <p>Nâng cấp độ phân giải ảnh sử dụng AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="detail-section">
+                    <h2>🛠️ Công cụ AI tạo sinh nội dung</h2>
+                    <div class="tools-detailed">
+                        <div class="tool-detailed-item">
+                            <h4>🎨 Ảnh</h4>
+                            <ul>
+                                <li><strong>DALL-E:</strong> Tạo ảnh từ mô tả văn bản (OpenAI)</li>
+                                <li><strong>Midjourney:</strong> Tạo ảnh chất lượng cao, chi tiết (Discord-based)</li>
+                                <li><strong>Stable Diffusion:</strong> Open-source, chạy trên máy tính cá nhân</li>
+                                <li><strong>Adobe Firefly:</strong> Tạo ảnh trong Adobe Creative Suite</li>
+                            </ul>
+                        </div>
+                        <div class="tool-detailed-item">
+                            <h4>🎬 Video</h4>
+                            <ul>
+                                <li><strong>Synthesia:</strong> Tạo video từ text với AI avatar</li>
+                                <li><strong>Runway AI:</strong> Chỉnh sửa video, remove background, motion</li>
+                                <li><strong>D-ID:</strong> Tạo video với nhân vật 3D nói chuyện</li>
+                                <li><strong>Pictory AI:</strong> Tạo video từ bài viết</li>
+                            </ul>
+                        </div>
+                        <div class="tool-detailed-item">
+                            <h4>🎵 Âm thanh</h4>
+                            <ul>
+                                <li><strong>Jukebox:</strong> Tạo nhạc AI (OpenAI)</li>
+                                <li><strong>Google Magenta:</strong> Tạo nhạc từ prompt</li>
+                                <li><strong>ElevenLabs:</strong> Tạo voice-over chất lượng cao</li>
+                                <li><strong>Murf.ai:</strong> Text-to-speech chuyên nghiệp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Prompt Best Practices -->
+                <div class="detail-section">
+                    <h2>🎨 Cách viết Prompt cho tạo sinh ảnh</h2>
+                    <div class="prompt-guide">
+                        <div class="guide-item">
+                            <h4>1. Chủ đề chính</h4>
+                            <p>Mô tả rõ ràng đối tượng hoặc cảnh chính. Ví dụ: "một chỉ mèo tabby"</p>
+                        </div>
+                        <div class="guide-item">
+                            <h4>2. Phong cách (Style)</h4>
+                            <p>Chỉ định phong cách nghệ thuật. Ví dụ: "in the style of watercolor, oil painting"</p>
+                        </div>
+                        <div class="guide-item">
+                            <h4>3. Chi tiết (Details)</h4>
+                            <p>Thêm chi tiết về ánh sáng, màu sắc, môi trường. Ví dụ: "golden hour lighting, vibrant colors"</p>
+                        </div>
+                        <div class="guide-item">
+                            <h4>4. Bố cục (Composition)</h4>
+                            <p>Mô tả cách bố cục ảnh. Ví dụ: "centered, wide angle, cinematic composition"</p>
+                        </div>
+                        <div class="guide-item">
+                            <h4>5. Chất lượng (Quality)</h4>
+                            <p>Chỉ định chất lượng. Ví dụ: "highly detailed, 4K, ultra HD, professional"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practical Examples -->
+                <div class="detail-section">
+                    <h2>📖 Các ví dụ Prompt cụ thể</h2>
+                    <div class="examples-list">
+                        <div class="example-item">
+                            <h4>Ví dụ 1: Tạo poster</h4>
+                            <p>"A modern tech conference poster with vibrant blue and purple colors, minimalist design, professional typography, digital art style, 4K resolution"</p>
+                        </div>
+                        <div class="example-item">
+                            <h4>Ví dụ 2: Tạo banner website</h4>
+                            <p>"Website banner with floating digital elements, gradient background (blue to purple), tech theme, clean design, modern aesthetic, 1920x1080"</p>
+                        </div>
+                        <div class="example-item">
+                            <h4>Ví dụ 3: Tạo thumbnail video</h4>
+                            <p>"YouTube thumbnail with bold text 'AI Tutorial', colorful background, 3D elements, eye-catching design, 1280x720"</p>
+                        </div>
+                        <div class="example-item">
+                            <h4>Ví dụ 4: Tạo bìa sách</h4>
+                            <p>"Book cover for sci-fi novel, futuristic city skyline, cyberpunk aesthetic, neon colors, professional layout, text area at bottom, 3000x4500"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workflow -->
+                <div class="detail-section">
+                    <h2>📊 Quy trình tạo sinh nội dung</h2>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Xác định nhu cầu</h4>
+                            <p>Xác định loại nội dung cần tạo và mục đích sử dụng</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Lựa chọn công cụ</h4>
+                            <p>Chọn công cụ AI phù hợp với loại nội dung</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Viết Prompt</h4>
+                            <p>Viết mô tả chi tiết, rõ ràng cho AI</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Tạo sinh nội dung</h4>
+                            <p>Sử dụng AI để tạo sinh nội dung ban đầu</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h4>Chỉnh sửa</h4>
+                            <p>Chỉnh sửa và cải tiến nội dung bằng các công cụ chỉnh sửa</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <h4>Tối ưu hóa</h4>
+                            <p>Tối ưu hóa cho mục đích sử dụng (resize, format, etc.)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ethical Considerations -->
+                <div class="detail-section">
+                    <h2>⚖️ Các cân nhắc đạo đức</h2>
+                    <div class="ethics-list">
+                        <div class="ethics-item">
+                            <h4>Quyền tác giả</h4>
+                            <p>Nội dung được tạo bởi AI có thể sử dụng được tự do hay cần cấp phép tùy vào công cụ</p>
+                        </div>
+                        <div class="ethics-item">
+                            <h4>Xác thực nội dung</h4>
+                            <p>Không sử dụng nội dung AI để lừa dối hoặc tạo giả thông tin</p>
+                        </div>
+                        <div class="ethics-item">
+                            <h4>Ghi công AI</h4>
+                            <p>Công khai rằng nội dung được tạo hoặc hỗ trợ bởi AI</p>
+                        </div>
+                        <div class="ethics-item">
+                            <h4>Tiết kiệm tài nguyên</h4>
+                            <p>Sử dụng công cụ AI một cách hợp lý để giảm tác động môi trường</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Outcomes -->
+                <div class="detail-section">
+                    <h2>✅ Kết quả sau hoàn thành</h2>
+                    <ul class="outcomes-list">
+                        <li>Thành thạo sử dụng các công cụ AI tạo sinh ảnh</li>
+                        <li>Biết cách viết Prompt hiệu quả cho tạo sinh nội dung</li>
+                        <li>Có khả năng tạo video, âm thanh bằng AI</li>
+                        <li>Có thể chỉnh sửa và tối ưu hóa nội dung được tạo bởi AI</li>
+                        <li>Nâng cao năng suất sáng tạo nội dung cho các dự án</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Back to Projects -->
+            <div class="back-button">
+                <a href="projects.html" class="btn btn-primary">← Quay lại danh sách dự án</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Phan Văn Tuyến. Sinh viên UET-K70.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="mailto:25022006@vnu.edu.vn">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

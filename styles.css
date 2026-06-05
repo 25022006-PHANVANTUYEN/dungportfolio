@@ -661,6 +661,474 @@ body {
     font-weight: 500;
 }
 
+/* ============================================
+   PROJECT DETAIL PAGE STYLES
+   ============================================ */
+
+.project-detail {
+    padding: 40px 20px;
+}
+
+.project-detail-header {
+    margin-bottom: 60px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(-5px);
+}
+
+.project-detail-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text);
+}
+
+.project-detail-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.detail-section {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
+
+.detail-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.detail-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.objectives-list,
+.strategies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.objective-item,
+.strategy-item,
+.issue-card,
+.practice-item,
+.guideline-item {
+    padding: 20px;
+    background: var(--bg);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.objective-item h4,
+.strategy-item h4,
+.issue-card h4,
+.practice-item h4,
+.guideline-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.objective-item p,
+.strategy-item p,
+.issue-card p,
+.practice-item p,
+.guideline-item p {
+    color: var(--text-secondary);
+}
+
+.concepts-grid,
+.criteria-grid,
+.tools-detailed,
+.practices-grid,
+.issues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.concept-card,
+.criteria-item,
+.practice-item {
+    padding: 25px;
+    background: var(--bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.concept-card:hover,
+.criteria-item:hover,
+.practice-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 20px var(--shadow);
+    transform: translateY(-3px);
+}
+
+.concept-card h4,
+.criteria-item h4,
+.practice-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.concept-card p,
+.criteria-item p,
+.practice-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.issue-card {
+    padding: 20px;
+    background: linear-gradient(135deg, var(--bg), var(--bg-secondary));
+    border-left: 4px solid var(--secondary-color);
+}
+
+.issue-card h4 {
+    color: var(--secondary-color);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.tool-item {
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tool-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.tool-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tool-item h4 {
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.tool-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.commands-table,
+.citation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.command-row,
+.citation-item {
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.command-row code,
+.citation-item code {
+    background: var(--bg-secondary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.command-row p,
+.citation-item p {
+    color: var(--text-secondary);
+}
+
+.workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.step {
+    padding: 30px 20px;
+    background: var(--bg);
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.step:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.step-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.step h4 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.examples-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.example-item {
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.example-item h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.example-item p {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.outcomes-list {
+    list-style: none;
+    padding: 0;
+}
+
+.outcomes-list li {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: var(--bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    color: var(--text-secondary);
+}
+
+.outcomes-list li::before {
+    content: '✓ ';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.back-button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.project-action {
+    padding: 15px 25px 0 25px;
+    text-align: center;
+}
+
+.prompt-guide,
+.education-section,
+.environmental-section,
+.future-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guide-item,
+.edu-item,
+.question-item {
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.guide-item h4,
+.edu-item h4,
+.question-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.guide-item p,
+.question-item p {
+    color: var(--text-secondary);
+}
+
+.edu-item ul {
+    list-style: none;
+    padding-left: 0;
+    color: var(--text-secondary);
+}
+
+.edu-item li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.edu-item li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.tool-detailed-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+}
+
+.tool-detailed-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.tool-detailed-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tool-detailed-item li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.tool-detailed-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.ip-section,
+.environmental-section {
+    color: var(--text-secondary);
+}
+
+.ip-section h4,
+.environmental-section h4 {
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ip-section ul,
+.environmental-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.ip-section li,
+.environmental-section li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.ip-section li::before,
+.environmental-section li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.resources-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.resource-item {
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.resource-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.resource-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-item li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.resource-item li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
 .projects-summary {
     margin-top: 60px;
     padding: 40px;
@@ -1083,6 +1551,26 @@ body {
     }
 
     .achievement-stats {
+        grid-template-columns: 1fr;
+    }
+
+    /* Project Detail Responsive */
+    .project-detail-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .concepts-grid,
+    .criteria-grid,
+    .practices-grid,
+    .issues-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-list {
         grid-template-columns: 1fr;
     }
 }
