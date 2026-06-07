@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phan Văn Tuyến - Portfolio</title>
+    <title>About Me - Phạm Cao Dũng Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,15 +11,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-icon">⚡</span>
-                <a href="index.html">Portfolio</a>
+                <span class="logo-icon">&lt;/&gt;</span>
+                <a href="index.html">Dung Portfolio</a>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
+                    <a href="index.html" class="nav-link active">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a href="projects.html" class="nav-link">My Projects</a>
@@ -30,6 +27,7 @@
             </ul>
             <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">
                 <span class="theme-icon">🌙</span>
+                <span class="theme-text">Dark Mode</span>
             </button>
         </div>
     </nav>
@@ -38,59 +36,88 @@
     <section class="hero">
         <div class="hero-content">
             <div class="greeting">Xin chào, tôi là</div>
-            <h1 class="name-title">Phan Văn Tuyến</h1>
-            <p class="subtitle">Sinh viên Điện tử Viễn thông | Đại học Quốc gia Hà Nội</p>
+            <h1 class="name-title">Phạm Cao Dũng</h1>
+            <p class="subtitle">Sinh viên Điện tử Viễn thông | Đại học Công nghệ (UET) - ĐHQGHN</p>
             
             <div class="hero-description">
-                <p>Portfolio Kỹ thuật số giới thiệu các dự án, kỹ năng và kiến thức học tập của tôi trong lĩnh vực <strong>Điện tử - Viễn thông</strong></p>
+                <p>Chào mừng bạn đến với Portfolio kỹ thuật số của tôi. Tôi là sinh viên ngành Điện tử - Viễn thông, có niềm đam mê sâu sắc với công nghệ số, lập trình phần mềm và nghiên cứu ứng dụng AI vào thực tế học tập và công việc.</p>
+            </div>
+
+            <!-- Profile Info Card -->
+            <div class="info-card">
+                <h3>Thông tin cơ bản</h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="info-label">Họ và tên:</span>
+                        <span class="info-value">Phạm Cao Dũng</span>
+                    </li>
+                    <li>
+                        <span class="info-label">Ngành học:</span>
+                        <span class="info-value">Điện tử - Viễn thông</span>
+                    </li>
+                    <li>
+                        <span class="info-label">Trường:</span>
+                        <span class="info-value">Đại học Công nghệ (UET) - Đại học Quốc gia Hà Nội</span>
+                    </li>
+                    <li>
+                        <span class="info-label">Email:</span>
+                        <span class="info-value"><a href="mailto:dungpc@vnu.edu.vn" style="color: var(--primary-color); text-decoration: none;">dungpc@vnu.edu.vn</a></span>
+                    </li>
+                    <li>
+                        <span class="info-label">Sở thích:</span>
+                        <span class="info-value">Lập trình, Nghiên cứu AI, Đọc sách công nghệ</span>
+                    </li>
+                </ul>
             </div>
 
             <div class="hero-buttons">
-                <a href="about.html" class="btn btn-primary">Tìm hiểu thêm</a>
-                <a href="projects.html" class="btn btn-secondary">Xem dự án</a>
+                <a href="projects.html" class="btn btn-primary">Xem các bài tập</a>
+                <a href="summary.html" class="btn btn-secondary">Xem tổng kết</a>
             </div>
         </div>
 
         <div class="hero-image">
             <div class="image-wrapper">
-                <img src="tải xuống.jpg" alt="Phan Văn Tuyến" class="hero-img">
+                <img src="tải xuống.jpg" alt="Phạm Cao Dũng" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- Highlights Section -->
-    <section class="highlights">
+    <!-- Orientation Section -->
+    <section class="orientation-section">
         <div class="container">
-            <h2>Điểm nổi bật</h2>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">📚</div>
-                    <h3>Kiến thức Chuyên môn</h3>
-                    <p>Nắm vững các kiến thức về Điện tử, Viễn thông và Công nghệ số</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">🛠️</div>
-                    <h3>Kỹ năng Thực hành</h3>
-                    <p>Áp dụng công cụ và kỹ năng vào các bài tập và dự án thực tế</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">💡</div>
-                    <h3>Sáng tạo & Đổi mới</h3>
-                    <p>Phát triển giải pháp sáng tạo cho các vấn đề trong lĩnh vực chuyên môn</p>
-                </div>
+            <div class="orientation-header">
+                <h1>Định hướng <span class="gradient-text">phát triển</span></h1>
+                <p class="subtitle">Mục tiêu học tập và định hướng phát triển cá nhân trong lĩnh vực Công nghệ thông tin.</p>
             </div>
-        </div>
-    </section>
+            
+            <div class="orientation-grid">
+                <!-- Card 1 -->
+                <div class="orientation-card">
+                    <div class="card-icon-container">
+                        <span class="card-icon">🎯</span>
+                    </div>
+                    <h3>Mục tiêu học tập</h3>
+                    <p>Nắm vững kiến thức nền tảng về <strong>khoa học máy tính</strong> và công nghệ số. Không chỉ dừng lại ở việc biết thao tác công cụ, mục tiêu cốt lõi của mình là hiểu rõ cơ chế vận hành của <strong>Trí tuệ nhân tạo (AI)</strong>. Từ đó, xây dựng <strong>tư duy giải quyết vấn đề (problem-solving)</strong>, tư duy hệ thống và rèn luyện kỹ năng tự học liên tục để thích ứng với môi trường công nghệ số luôn biến đổi.</p>
+                </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Bắt đầu khám phá</h2>
-            <p>Điều hướng qua Portfolio để tìm hiểu thêm về các dự án, kỹ năng và những thành tựu của tôi</p>
-            <div class="cta-buttons">
-                <a href="about.html" class="btn btn-large">About Me</a>
-                <a href="projects.html" class="btn btn-large btn-outline">My Projects</a>
-                <a href="summary.html" class="btn btn-large">Summary</a>
+                <!-- Card 2 -->
+                <div class="orientation-card">
+                    <div class="card-icon-container">
+                        <span class="card-icon">🚀</span>
+                    </div>
+                    <h3>Định hướng phát triển</h3>
+                    <p>Hướng tới mục tiêu trở thành một <strong>Kỹ sư phần mềm (Software Engineer)</strong> toàn diện. Định hướng của mình là làm chủ và tích hợp sức mạnh của <strong>Generative AI</strong> vào quy trình làm việc (coding, testing, tối ưu hóa hệ thống) để bứt phá hiệu suất. Song song với đó, việc duy trì tư duy phản biện, đạo đức nghề nghiệp và liêm chính học thuật là kim chỉ nam vững chắc cho mọi dự án mình tham gia.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="orientation-card">
+                    <div class="card-icon-container">
+                        <span class="card-icon">📁</span>
+                    </div>
+                    <h3>Mục tiêu Portfolio</h3>
+                    <p>Portfolio này không chỉ là sản phẩm tổng kết học phần <strong>Nhập môn Công nghệ số & Ứng dụng AI</strong>, mà còn là một <strong>Digital CV</strong> minh chứng cho năng lực thực chiến. Đây là không gian lưu trữ và hệ thống hóa các kỹ năng của mình (quản lý tệp, tra cứu học thuật, Prompt Engineering...), đóng vai trò là công cụ đắc lực để giới thiệu bản thân với các nhà tuyển dụng và đối tác trong tương lai.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -98,11 +125,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Phan Văn Tuyến. Sinh viên UET-K70.</p>
+            <p>&copy; 2025 Phạm Cao Dũng. Sinh viên Đại học Công nghệ (UET) - ĐHQGHN.</p>
             <div class="footer-links">
                 <a href="https://github.com" target="_blank">GitHub</a>
                 <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="mailto:25022006@vnu.edu.vn">Email</a>
+                <a href="mailto:dungpc@vnu.edu.vn">Email</a>
             </div>
         </div>
     </footer>

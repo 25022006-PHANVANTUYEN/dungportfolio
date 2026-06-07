@@ -12,30 +12,38 @@ const currentTheme = localStorage.getItem('theme') || 'light';
 // Set initial theme
 if (currentTheme === 'dark') {
     body.classList.add('dark-mode');
-    updateThemeIcon();
 }
-
-// Toggle theme on button click
-themeToggle.addEventListener('click', () => {
-    const isDarkMode = body.classList.toggle('dark-mode');
-    
-    // Save preference
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    
-    // Update icon
-    updateThemeIcon();
-});
 
 // Function to update theme icon
 function updateThemeIcon() {
+    if (!themeToggle) return;
     const icon = themeToggle.querySelector('.theme-icon');
+    const text = themeToggle.querySelector('.theme-text');
     if (body.classList.contains('dark-mode')) {
-        icon.textContent = '☀️';
+        if (icon) icon.textContent = '☀️';
+        if (text) text.textContent = 'Light Mode';
         themeToggle.title = 'Toggle Light Mode';
     } else {
-        icon.textContent = '🌙';
+        if (icon) icon.textContent = '🌙';
+        if (text) text.textContent = 'Dark Mode';
         themeToggle.title = 'Toggle Dark Mode';
     }
+}
+
+// Set initial theme state UI
+updateThemeIcon();
+
+// Toggle theme on button click
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const isDarkMode = body.classList.toggle('dark-mode');
+        
+        // Save preference
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        
+        // Update icon
+        updateThemeIcon();
+    });
 }
 
 /* ============================================
@@ -154,18 +162,6 @@ document.addEventListener('keydown', (e) => {
         themeToggle.click();
     }
 });
-
-/* ============================================
-   PRINT STYLES
-   ============================================ */
-
-@media print {
-    .navbar,
-    .footer,
-    .theme-toggle {
-        display: none;
-    }
-}
 
 /* ============================================
    ACCESSIBILITY ENHANCEMENTS

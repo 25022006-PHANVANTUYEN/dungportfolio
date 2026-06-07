@@ -64,7 +64,25 @@ body {
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
+    
+    /* Subtle background grid pattern for light mode */
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(108, 92, 231, 0.03) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 212, 255, 0.03) 0px, transparent 50%),
+        linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+body.dark-mode {
+    /* Glowing grid pattern for dark mode */
+    background-image: 
+        radial-gradient(at 20% 20%, rgba(108, 92, 231, 0.12) 0px, transparent 50%),
+        radial-gradient(at 80% 80%, rgba(0, 212, 255, 0.12) 0px, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
 }
 
 .container {
@@ -154,18 +172,37 @@ body {
 }
 
 .theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(22, 27, 34, 0.45);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 30px;
     cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px var(--shadow);
+}
+
+body:not(.dark-mode) .theme-toggle {
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 .theme-toggle:hover {
     background-color: var(--border);
-    transform: scale(1.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+.theme-icon {
+    font-size: 1.1rem;
+}
+
+.theme-text {
+    font-weight: 500;
 }
 
 /* ============================================
@@ -1604,5 +1641,140 @@ body {
     .footer-links {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+/* ============================================
+   ORIENTATION SECTION (ABOUT ME THREE CARDS)
+   ============================================ */
+
+.orientation-section {
+    padding: 80px 20px;
+    position: relative;
+}
+
+.orientation-header {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.orientation-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.orientation-header h1 .gradient-text {
+    background: linear-gradient(90deg, #00d4ff, #6c5ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.orientation-header .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+}
+
+.orientation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.orientation-card {
+    background: rgba(22, 27, 34, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* For light mode card style adaptation */
+body:not(.dark-mode) .orientation-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.orientation-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 212, 255, 0.15);
+}
+
+body:not(.dark-mode) .orientation-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.10);
+}
+
+.card-icon-container {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+body:not(.dark-mode) .card-icon-container {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+    font-size: 1.8rem;
+}
+
+.orientation-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.orientation-card p {
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
+.orientation-card p strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.logo-icon {
+    font-weight: 800;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+    .orientation-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .orientation-grid {
+        grid-template-columns: 1fr;
+    }
+    .orientation-header h1 {
+        font-size: 2.2rem;
     }
 }

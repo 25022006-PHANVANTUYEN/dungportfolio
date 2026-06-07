@@ -1,15 +1,14 @@
-# Portfolio - Phan Văn Tuyến
+# Portfolio - Phạm Cao Dũng
 
-Portfolio Kỹ thuật số cho Phan Văn Tuyến, sinh viên ngành Điện tử Viễn thông - Đại học Quốc gia Hà Nội.
+Portfolio Kỹ thuật số cho Phạm Cao Dũng, sinh viên ngành Điện tử Viễn thông - Đại học Công nghệ (UET) - Đại học Quốc gia Hà Nội.
 
 ## 📁 Cấu trúc tệp
 
 ```
 Portfolio/
-├── index.html           # Trang chủ
-├── about.html          # Trang giới thiệu bản thân
-├── projects.html       # Trang các bài tập & dự án (6 bài)
-├── summary.html        # Trang tóm tắt
+├── index.html           # Trang chủ & Giới thiệu bản thân (About Me)
+├── projects.html       # Trang các bài tập & dự án (My Projects)
+├── summary.html        # Trang tóm tắt (Summary)
 ├── styles.css          # Tệp CSS chính (Dark mode/Light mode)
 ├── script.js           # Tệp JavaScript cho tương tác
 ├── tải xuống.jpg       # Ảnh avatar
@@ -26,14 +25,13 @@ Portfolio/
 - Chuyển đổi chủ đề tối và sáng
 - Lưu trữ tùy chọn trong localStorage
 
-✅ **4 Trang chính**
-- **Home (index.html)**: Trang giới thiệu chung
-- **About Me (about.html)**: Giới thiệu bản thân, kỹ năng, thông tin cá nhân
+✅ **3 Trang chính**
+- **About Me (index.html)**: Trang giới thiệu bản thân, thông tin cá nhân và định hướng phát triển
 - **My Projects (projects.html)**: 6 bài tập trong học phần Nhập môn Công nghệ số
 - **Summary (summary.html)**: Tóm tắt học tập và hướng phát triển
 
 ✅ **Tích hợp Avatar**
-- Ảnh của bạn (tải xuống.jpg) được sử dụng ở trang Home và About Me
+- Ảnh của bạn (tải xuống.jpg) được sử dụng ở trang About Me (index.html)
 
 ✅ **Thiết kế chuyên nghiệp**
 - Màu sắc chủ đề: Xanh dương (00d4ff) và Tím (6c5ce7)
@@ -99,7 +97,7 @@ Portfolio/
 - Thay thế file **tải xuống.jpg** bằng ảnh của bạn
 - Hoặc đổi tên file trong HTML:
   ```html
-  <img src="tên-file-mới.jpg" alt="Phan Văn Tuyến">
+  <img src="tên-file-mới.jpg" alt="Phạm Cao Dũng">
   ```
 
 ## 🎯 Các bài tập trong My Projects
@@ -196,9 +194,9 @@ A: Có! Tùy chọn được lưu trong localStorage của trình duyệt.
 
 ## 📧 Liên hệ
 
-- Email: 25022006@vnu.edu.vn
-- Trường: Đại học Quốc gia Hà Nội
-- Ngành: Khoa học Máy tính (Điện tử Viễn thông)
+- Email: dungpc@vnu.edu.vn
+- Trường: Đại học Công nghệ (UET) - Đại học Quốc gia Hà Nội
+- Ngành: Điện tử Viễn thông
 
 ---
 
