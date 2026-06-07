@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 3: Sử dụng Prompt hiệu quả - Phạm Cao Dũng</title>
+    <title>Bài tập 3 - Phạm Cao Dũng Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,184 +32,70 @@
         </div>
     </nav>
 
-    <!-- Project Detail Section -->
+    <!-- Main Content -->
     <section class="project-detail">
         <div class="container">
             <div class="project-detail-header">
-                <a href="projects.html" class="back-link">← Quay lại</a>
-                <h1>Bài 3: Sử dụng Prompt hiệu quả cho các tác vụ học tập</h1>
+                <a href="index.html" class="back-link">← Quay lại Portfolio (index.html)</a>
+                <h1>Bài tập 3 - Bài 3: Tổng quan về trí tuệ nhân tạo</h1>
                 <div class="divider"></div>
             </div>
 
             <div class="project-detail-content">
-                <!-- Project Overview -->
+                <!-- Section 1: Objectives -->
                 <div class="detail-section">
-                    <h2>📌 Tổng quan</h2>
+                    <h2>🎯 1. Mục tiêu của bài tập</h2>
                     <p>
-                        Bài tập này giới thiệu về cách sử dụng các công cụ AI và Chatbot hiệu quả thông qua Prompt Engineering. 
-                        Trong thời đại AI, khả năng tương tác với công cụ AI một cách đúng cách sẽ giúp tăng năng suất học tập 
-                        và công việc một cách đáng kể.
+                        Tìm hiểu và áp dụng các kỹ thuật viết Prompt Engineering cơ bản, tương tác hiệu quả với các chatbot AI để giải quyết các tác vụ học tập, hỗ trợ tóm tắt tài liệu khoa học, giải thích công thức toán kỹ thuật và gỡ lỗi (debug) mã nguồn lập trình.
                     </p>
                 </div>
 
-                <!-- Learning Objectives -->
+                <!-- Section 2: Process -->
                 <div class="detail-section">
-                    <h2>🎯 Mục tiêu học tập</h2>
-                    <div class="objectives-list">
-                        <div class="objective-item">
-                            <h4>Hiểu biết về Prompt Engineering</h4>
-                            <p>Nắm rõ các nguyên lý cơ bản của việc tạo ra các Prompt hiệu quả cho AI</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Thiết kế Prompt tốt</h4>
-                            <p>Biết cách viết các Prompt rõ ràng, cụ thể, chi tiết để nhận được kết quả tốt nhất</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Sử dụng AI Chatbot</h4>
-                            <p>Làm quen với các công cụ AI Chatbot như ChatGPT, Gemini, Claude, v.v.</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Đánh giá chất lượng kết quả</h4>
-                            <p>Phát triển khả năng kiểm chứng, đánh giá, và cải tiến kết quả từ AI</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Key Concepts -->
-                <div class="detail-section">
-                    <h2>💡 Các khái niệm chính</h2>
-                    <div class="concepts-grid">
-                        <div class="concept-card">
-                            <h4>Prompt (Lời nhắc)</h4>
-                            <p>Câu hỏi hoặc hướng dẫn được gửi đến AI để nhận được phản hồi</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Temperature</h4>
-                            <p>Tham số kiểm soát tính sáng tạo của AI (0 = lặp lại, 1 = sáng tạo)</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Context (Bối cảnh)</h4>
-                            <p>Thông tin bối cảnh được cung cấp trong Prompt để hướng dẫn AI</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Token</h4>
-                            <p>Đơn vị cơ bản của dữ liệu mà AI xử lý (từ, ký tự, v.v.)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Prompt Techniques -->
-                <div class="detail-section">
-                    <h2>🎨 Các kỹ thuật Prompt</h2>
-                    <div class="techniques-list">
-                        <div class="technique-item">
-                            <h4>1. Zero-Shot Prompting</h4>
-                            <p>Yêu cầu AI làm việc gì đó mà không có ví dụ. Ví dụ: "Dịch câu này sang tiếng Anh"</p>
-                        </div>
-                        <div class="technique-item">
-                            <h4>2. Few-Shot Prompting</h4>
-                            <p>Cung cấp một vài ví dụ để hướng dẫn AI. Ví dụ: "Tìm kiếm sentimen. Ví dụ 1:... Ví dụ 2:..."</p>
-                        </div>
-                        <div class="technique-item">
-                            <h4>3. Chain-of-Thought Prompting</h4>
-                            <p>Yêu cầu AI giải thích từng bước. Ví dụ: "Giải quyết bài toán này từng bước"</p>
-                        </div>
-                        <div class="technique-item">
-                            <h4>4. Role Prompting</h4>
-                            <p>Yêu cầu AI đóng một vai trò cụ thể. Ví dụ: "Bạn là một giáo viên, giải thích..."</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Best Practices -->
-                <div class="detail-section">
-                    <h2>⭐ Các thực hành tốt nhất</h2>
-                    <div class="practices-grid">
-                        <div class="practice-item">
-                            <h4>Rõ ràng và cụ thể</h4>
-                            <p>Hãy cụ thể về những gì bạn muốn, tránh những lời nhắc mơ hồ</p>
-                        </div>
-                        <div class="practice-item">
-                            <h4>Cung cấp ngữ cảnh</h4>
-                            <p>Cho AI biết bối cảnh, mục tiêu, và đối tượng mục tiêu</p>
-                        </div>
-                        <div class="practice-item">
-                            <h4>Sử dụng ví dụ</h4>
-                            <p>Cung cấp ví dụ về định dạng hoặc kết quả mong muốn</p>
-                        </div>
-                        <div class="practice-item">
-                            <h4>Kiểm chứng kết quả</h4>
-                            <p>Luôn kiểm chứng và đánh giá chất lượng kết quả từ AI</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Tools -->
-                <div class="detail-section">
-                    <h2>🛠️ Công cụ AI phổ biến</h2>
-                    <div class="tools-grid">
-                        <div class="tool-item">
-                            <span class="tool-icon">🤖</span>
-                            <h4>ChatGPT</h4>
-                            <p>OpenAI - Chat, viết, code</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">💡</span>
-                            <h4>Gemini</h4>
-                            <p>Google - Đa mô phỏng AI</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">📝</span>
-                            <h4>Claude</h4>
-                            <p>Anthropic - AI thân thiện</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">🎨</span>
-                            <h4>DALL-E / Midjourney</h4>
-                            <p>Tạo sinh ảnh từ text</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Practical Examples -->
-                <div class="detail-section">
-                    <h2>📖 Các ví dụ thực tế</h2>
-                    <div class="examples-list">
-                        <div class="example-item">
-                            <h4>Ví dụ 1: Học tập</h4>
-                            <p>"Giải thích khái niệm [X] cho sinh viên cấp [Y]. Sử dụng ví dụ thực tế."</p>
-                        </div>
-                        <div class="example-item">
-                            <h4>Ví dụ 2: Viết bài</h4>
-                            <p>"Viết một bài luận về [chủ đề] với cấu trúc: giới thiệu, 3 điểm chính, kết luận."</p>
-                        </div>
-                        <div class="example-item">
-                            <h4>Ví dụ 3: Lập trình</h4>
-                            <p>"Viết code Python để [tác vụ]. Giải thích từng dòng code."</p>
-                        </div>
-                        <div class="example-item">
-                            <h4>Ví dụ 4: Brainstorm</h4>
-                            <p>"Cho tôi 5 ý tưởng sáng tạo cho [dự án]. Mỗi ý tưởng có 2-3 câu mô tả."</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Learning Outcomes -->
-                <div class="detail-section">
-                    <h2>✅ Kết quả sau hoàn thành</h2>
-                    <ul class="outcomes-list">
-                        <li>Hiểu biết về nguyên lý Prompt Engineering</li>
-                        <li>Có khả năng thiết kế các Prompt hiệu quả</li>
-                        <li>Thành thạo sử dụng các công cụ AI Chatbot</li>
-                        <li>Biết cách đánh giá và cải tiến kết quả AI</li>
-                        <li>Nâng cao năng suất học tập và công việc với AI</li>
+                    <h2>🛠️ 2. Quá trình thực hiện</h2>
+                    <p>Tôi đã áp dụng các kiến thức về kỹ thuật lời nhắc thông qua các giai đoạn sau:</p>
+                    <ul class="steps-list" style="list-style: none; padding-left: 0; margin-top: 15px;">
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 1: Tìm hiểu cấu trúc Prompt chuẩn:</strong> Nghiên cứu thành phần cốt lõi của một Prompt gồm: Chỉ thị (Instruction), Ngữ cảnh (Context), Dữ liệu đầu vào (Input Data) và Định dạng đầu ra (Output Indicator).
+                        </li>
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 2: Thực hành các kỹ thuật Prompting:</strong> Viết thử nghiệm các kỹ thuật <code>Role-Prompting</code> (yêu cầu AI đóng vai kỹ sư viễn thông), <code>Few-Shot Prompting</code> (cung cấp mẫu ví dụ) và <code>Chain-of-Thought</code> (yêu cầu AI tư duy từng bước một).
+                        </li>
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 3: Tối ưu hóa & Đánh giá:</strong> Tương tác kiểm thử trên Gemini, ChatGPT và Claude. Phân tích lỗi hallucination (ảo tưởng) của AI, tinh chỉnh lại lời nhắc để đạt được câu trả lời chất lượng cao nhất.
+                        </li>
                     </ul>
                 </div>
-            </div>
 
-            <!-- Back to Projects -->
-            <div class="back-button">
-                <a href="projects.html" class="btn btn-primary">← Quay lại danh sách dự án</a>
+                <!-- Section 3: Final Product -->
+                <div class="detail-section">
+                    <h2>📦 3. Sản phẩm cuối cùng</h2>
+                    <p>Dưới đây là không gian trưng bày sản phẩm báo cáo ứng dụng Prompt bài tập 3:</p>
+                    
+                    <!-- PDF Embed / Video Showcase Frame -->
+                    <div class="showcase-area">
+                        <div style="text-align: center; padding: 40px;">
+                            <span style="font-size: 4rem; display: block; margin-bottom: 15px;">🤖</span>
+                            <h3 style="color: var(--text); margin-bottom: 10px;">Báo cáo bài tập 3 PDF</h3>
+                            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 20px; font-size: 0.95rem;">
+                                Tập hợp các Prompt mẫu tối ưu kèm ảnh lịch sử chat giải quyết bài tập lớn môn kỹ thuật viễn thông.
+                            </p>
+                            <span style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary); border: 1px dashed var(--border); padding: 6px 12px; border-radius: 6px;">
+                                [Mẹo: Bạn có thể nhúng trực tiếp mã &lt;iframe src="LINK_PDF"&gt;&lt;/iframe&gt; vào đây sau này]
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="LINK_GG_DRIVE_BAI3" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; text-decoration: none; padding: 12px 28px; border-radius: 8px;">
+                            📥 Tải sản phẩm từ Google Drive
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

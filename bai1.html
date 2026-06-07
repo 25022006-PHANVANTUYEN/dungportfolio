@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 1: Thao tác cơ bản với tệp tin - Phạm Cao Dũng</title>
+    <title>Bài tập 1 - Phạm Cao Dũng Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,203 +32,70 @@
         </div>
     </nav>
 
-    <!-- Project Detail Section -->
+    <!-- Main Content -->
     <section class="project-detail">
         <div class="container">
             <div class="project-detail-header">
-                <a href="projects.html" class="back-link">← Quay lại</a>
-                <h1>Bài 1: Thao tác cơ bản với tệp tin và thư mục</h1>
+                <a href="index.html" class="back-link">← Quay lại Portfolio (index.html)</a>
+                <h1>Bài tập 1 - Bài 1: Máy tính và các thiết bị ngoại vi</h1>
                 <div class="divider"></div>
             </div>
 
             <div class="project-detail-content">
-                <!-- Project Overview -->
+                <!-- Section 1: Objectives -->
                 <div class="detail-section">
-                    <h2>📌 Tổng quan</h2>
+                    <h2>🎯 1. Mục tiêu của bài tập</h2>
                     <p>
-                        Bài tập này là bài tập đầu tiên trong khóa học, nhằm giúp sinh viên làm quen với các thao tác 
-                        cơ bản với hệ thống tệp tin và thư mục. Đây là nền tảng quan trọng để có thể làm việc hiệu quả 
-                        với máy tính và quản lý các dự án lập trình sau này.
+                        Tìm hiểu và thực hành các thao tác quản lý tệp tin và thư mục cơ bản trên hệ điều hành thông qua giao diện dòng lệnh (CLI). Học cách điều hướng, cấu trúc cây thư mục hệ thống khoa học và áp dụng phân quyền truy cập an toàn cho tài liệu.
                     </p>
                 </div>
 
-                <!-- Learning Objectives -->
+                <!-- Section 2: Process -->
                 <div class="detail-section">
-                    <h2>🎯 Mục tiêu học tập</h2>
-                    <div class="objectives-list">
-                        <div class="objective-item">
-                            <h4>Hiểu biết cấu trúc hệ thống tệp</h4>
-                            <p>Nắm rõ cách tổ chức tệp tin và thư mục trong hệ điều hành, hiểu khái niệm đường dẫn tuyệt đối và tương đối</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Thực hiện các thao tác cơ bản</h4>
-                            <p>Thành thạo các lệnh tạo, xóa, sao chép, di chuyển, đổi tên tệp tin và thư mục bằng Command Line hoặc GUI</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Quản lý quyền truy cập tệp</h4>
-                            <p>Hiểu rõ về quyền đọc, ghi, thực thi (chmod) và biết cách thay đổi quyền truy cập tệp</p>
-                        </div>
-                        <div class="objective-item">
-                            <h4>Sử dụng các lệnh hữu ích</h4>
-                            <p>Làm quen với các lệnh như ls, cd, mkdir, cp, mv, rm, find, grep, v.v.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Key Concepts -->
-                <div class="detail-section">
-                    <h2>💡 Các khái niệm chính</h2>
-                    <div class="concepts-grid">
-                        <div class="concept-card">
-                            <h4>Đường dẫn tuyệt đối (Absolute Path)</h4>
-                            <p>Đường dẫn bắt đầu từ thư mục gốc (root). Ví dụ: /home/user/documents/file.txt</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Đường dẫn tương đối (Relative Path)</h4>
-                            <p>Đường dẫn từ thư mục hiện tại. Ví dụ: ./documents/file.txt hoặc ../downloads/file.txt</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Quyền truy cập (Permissions)</h4>
-                            <p>Quyền đọc (r), ghi (w), thực thi (x) cho chủ sở hữu, nhóm, và những người khác</p>
-                        </div>
-                        <div class="concept-card">
-                            <h4>Cấu trúc thư mục</h4>
-                            <p>Tổ chức hệ thống tệp theo cây thư mục, với thư mục gốc (root) ở đầu</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Practical Tasks -->
-                <div class="detail-section">
-                    <h2>🔧 Các nhiệm vụ thực hành</h2>
-                    <div class="tasks-list">
-                        <div class="task-item">
-                            <div class="task-number">1</div>
-                            <div class="task-content">
-                                <h4>Tạo cấu trúc thư mục</h4>
-                                <p>Tạo một thư mục dự án với cấu trúc con như: documents/project1/src, documents/project1/data, documents/project1/results</p>
-                            </div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-number">2</div>
-                            <div class="task-content">
-                                <h4>Tạo và quản lý tệp</h4>
-                                <p>Tạo các tệp text (.txt), tệp Python (.py), tệp dữ liệu (.csv) trong các thư mục con</p>
-                            </div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-number">3</div>
-                            <div class="task-content">
-                                <h4>Sao chép và di chuyển tệp</h4>
-                                <p>Thực hành sao chép tệp từ thư mục này sang thư mục khác, di chuyển tệp, đổi tên tệp</p>
-                            </div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-number">4</div>
-                            <div class="task-content">
-                                <h4>Thay đổi quyền truy cập</h4>
-                                <p>Sử dụng chmod để thay đổi quyền truy cập tệp, tạo tệp thực thi được</p>
-                            </div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-number">5</div>
-                            <div class="task-content">
-                                <h4>Tìm kiếm tệp</h4>
-                                <p>Sử dụng lệnh find, grep để tìm kiếm tệp theo tên, loại, kích thước, ngày sửa đổi</p>
-                            </div>
-                        </div>
-                        <div class="task-item">
-                            <div class="task-number">6</div>
-                            <div class="task-content">
-                                <h4>Xóa tệp và thư mục</h4>
-                                <p>Thực hành xóa tệp và thư mục một cách an toàn, sử dụng các tùy chọn rm -r, rmdir</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Technologies -->
-                <div class="detail-section">
-                    <h2>🛠️ Công cụ & Công nghệ</h2>
-                    <div class="tools-grid">
-                        <div class="tool-item">
-                            <span class="tool-icon">💻</span>
-                            <h4>Command Line Interface (CLI)</h4>
-                            <p>Terminal/PowerShell/CMD</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">📁</span>
-                            <h4>File Manager</h4>
-                            <p>Windows Explorer, Nautilus, Finder</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">📝</span>
-                            <h4>Text Editor</h4>
-                            <p>VS Code, Notepad++, Vim</p>
-                        </div>
-                        <div class="tool-item">
-                            <span class="tool-icon">🔍</span>
-                            <h4>Search Tools</h4>
-                            <p>find, grep, locate</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Essential Commands -->
-                <div class="detail-section">
-                    <h2>📋 Các lệnh cần thiết</h2>
-                    <div class="commands-table">
-                        <div class="command-row">
-                            <code>ls / dir</code>
-                            <p>Liệt kê danh sách tệp tin và thư mục</p>
-                        </div>
-                        <div class="command-row">
-                            <code>cd</code>
-                            <p>Thay đổi thư mục làm việc hiện tại</p>
-                        </div>
-                        <div class="command-row">
-                            <code>mkdir</code>
-                            <p>Tạo thư mục mới</p>
-                        </div>
-                        <div class="command-row">
-                            <code>cp</code>
-                            <p>Sao chép tệp tin hoặc thư mục</p>
-                        </div>
-                        <div class="command-row">
-                            <code>mv</code>
-                            <p>Di chuyển hoặc đổi tên tệp tin</p>
-                        </div>
-                        <div class="command-row">
-                            <code>rm / del</code>
-                            <p>Xóa tệp tin hoặc thư mục</p>
-                        </div>
-                        <div class="command-row">
-                            <code>find</code>
-                            <p>Tìm kiếm tệp tin theo các tiêu chí</p>
-                        </div>
-                        <div class="command-row">
-                            <code>chmod</code>
-                            <p>Thay đổi quyền truy cập tệp tin</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Learning Outcomes -->
-                <div class="detail-section">
-                    <h2>✅ Kết quả sau hoàn thành</h2>
-                    <ul class="outcomes-list">
-                        <li>Hiểu rõ cách tổ chức và quản lý tệp tin trên máy tính</li>
-                        <li>Có thể thực hiện các thao tác cơ bản với tệp tin từ CLI</li>
-                        <li>Biết cách quản lý quyền truy cập tệp tin</li>
-                        <li>Có thể tìm kiếm tệp tin hiệu quả sử dụng các công cụ tìm kiếm</li>
-                        <li>Sẵn sàng cho các bài tập nâng cao về lập trình và quản lý dự án</li>
+                    <h2>🛠️ 2. Quá trình thực hiện</h2>
+                    <p>Trong quá trình hoàn thành bài tập, tôi đã thực hiện các bước sau và rèn luyện các kỹ năng số chuyên môn:</p>
+                    <ul class="steps-list" style="list-style: none; padding-left: 0; margin-top: 15px;">
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 1: Khởi tạo CLI & Điều hướng:</strong> Mở Terminal (Linux/macOS) hoặc PowerShell (Windows), làm quen với các câu lệnh cơ bản để di chuyển giữa các thư mục (<code>cd</code>, <code>pwd</code>) và liệt kê tệp tin (<code>ls</code> hoặc <code>dir</code>).
+                        </li>
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 2: Cấu trúc thư mục:</strong> Xây dựng cấu trúc thư mục học tập quy củ bằng lệnh <code>mkdir</code>. Thực hiện sao chép (<code>cp</code>), di chuyển/đổi tên (<code>mv</code>) và dọn dẹp các tệp tin cũ bằng lệnh xóa (<code>rm</code>).
+                        </li>
+                        <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color);">✔</span>
+                            <strong>Bước 3: Thiết lập quyền bảo mật:</strong> Thực hành lệnh phân quyền hệ thống Unix/Linux (<code>chmod</code>) nhằm giới hạn quyền đọc (read), ghi (write) và thực thi (execute) cho từng nhóm tài khoản người dùng khác nhau.
+                        </li>
                     </ul>
                 </div>
-            </div>
 
-            <!-- Back to Projects -->
-            <div class="back-button">
-                <a href="projects.html" class="btn btn-primary">← Quay lại danh sách dự án</a>
+                <!-- Section 3: Final Product -->
+                <div class="detail-section">
+                    <h2>📦 3. Sản phẩm cuối cùng</h2>
+                    <p>Dưới đây là không gian trưng bày sản phẩm báo cáo bài tập thực hành số 1:</p>
+                    
+                    <!-- PDF Embed / Video Showcase Frame -->
+                    <div class="showcase-area">
+                        <div style="text-align: center; padding: 40px;">
+                            <span style="font-size: 4rem; display: block; margin-bottom: 15px;">📄</span>
+                            <h3 style="color: var(--text); margin-bottom: 10px;">Báo cáo bài tập 1 PDF</h3>
+                            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 20px; font-size: 0.95rem;">
+                                Tài liệu ghi lại chi tiết các câu lệnh đã thực hành và ảnh chụp màn hình minh họa kết quả.
+                            </p>
+                            <span style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary); border: 1px dashed var(--border); padding: 6px 12px; border-radius: 6px;">
+                                [Mẹo: Bạn có thể nhúng trực tiếp mã &lt;iframe src="LINK_PDF"&gt;&lt;/iframe&gt; vào đây sau này]
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <a href="LINK_GG_DRIVE_BAI1" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; font-weight: 600; text-decoration: none; padding: 12px 28px; border-radius: 8px;">
+                            📥 Tải sản phẩm từ Google Drive
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
